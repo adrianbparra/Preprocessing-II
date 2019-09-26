@@ -1,1 +1,29 @@
 // Navigation Styles here
+.container-nav {
+    border-bottom: 2px dashed #C0C0C0;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 1.6rem;
+        a:first-child {
+            width: 56%;
+            font-family: 'Indie Flower', cursive;
+            font-size: 4rem;
+        }
+        a:last-child {
+            padding-right: 30px;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: lighten(black,60%);
+            }
+        }
+    }
+}
