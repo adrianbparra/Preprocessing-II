@@ -10,13 +10,13 @@
         width: 100%;
         margin: 0 auto;
         font-size: 1.6rem;
-        a:first-child {
+        .nav-title {
             width: 56%;
             font-family: 'Indie Flower', cursive;
             font-size: 4rem;
         }
         a:last-child {
-            padding-right: 30px;
+            padding-right: 4%;
         }
         a {
             text-decoration: none;
@@ -29,9 +29,18 @@
     @media @mobile {
         .navbar {
             flex-wrap: wrap;
-        }
-        a:first-child {
-            width: 100%;
-        }
+            .nav-title {
+                justify-self: stretch;
+                width: 100%;
+                text-align: center;
+                font-size: 3rem;
+            }
+            a:nth-child(2) {
+                padding-left: 60px;
+            }
+            a:last-child {
+                padding-right: 60px;
+            }
+        }   
     }
 }

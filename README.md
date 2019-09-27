@@ -56,3 +56,6 @@ Follow these steps for completing your project.
 
 
 
+## Questions:
+Should media queries be placed inside each tag or only the main tag.
+For the title, should it be an anchor tag within the nav bar or seperate.

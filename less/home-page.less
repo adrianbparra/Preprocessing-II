@@ -1,5 +1,7 @@
 .home {
 
+  // for the media queries, should they be added inside each tag or the main tag
+
   .main-header {
     .text-content{
       margin: 20px 0;
@@ -19,6 +21,11 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
     }
 
     .img-content {
@@ -27,6 +34,13 @@
 
       img {
         border-radius: 10px;
+        width: 100%;
+      }
+
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+
       }
     }
   }
@@ -44,6 +58,10 @@
       padding-right: 1%;
       padding-left: 0;
     }
+
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
   }
 
   .content-destination {
@@ -52,6 +70,10 @@
 
     img {
       border-radius: 10px;
+    }
+
+    @media @mobile {
+      width: 100%;
     }
   }
 
@@ -64,9 +86,27 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width: 100%;
+        padding: 0 50px;
+      }
     }
     .btn {
+      width: 90%;
+      padding: 12px 0;
+      text-align: center;
       .btn-blue;
+
+      @media @mobile {
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+      }
+    }
+
+    @media @mobile {
+      flex-direction: column;
     }
   }
 }// home

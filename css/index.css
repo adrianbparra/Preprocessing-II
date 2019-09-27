@@ -168,6 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 24px;
+  }
+}
 .container-nav {
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -181,13 +186,13 @@ img {
   margin: 0 auto;
   font-size: 1.6rem;
 }
-.container-nav .navbar a:first-child {
+.container-nav .navbar .nav-title {
   width: 56%;
   font-family: 'Indie Flower', cursive;
   font-size: 4rem;
 }
 .container-nav .navbar a:last-child {
-  padding-right: 30px;
+  padding-right: 4%;
 }
 .container-nav .navbar a {
   text-decoration: none;
@@ -200,8 +205,17 @@ img {
   .container-nav .navbar {
     flex-wrap: wrap;
   }
-  .container-nav a:first-child {
+  .container-nav .navbar .nav-title {
+    justify-self: stretch;
     width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+  .container-nav .navbar a:nth-child(2) {
+    padding-left: 60px;
+  }
+  .container-nav .navbar a:last-child {
+    padding-right: 60px;
   }
 }
 .footer {
@@ -230,12 +244,25 @@ img {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -249,12 +276,22 @@ img {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -266,9 +303,17 @@ img {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    padding: 0 50px;
+  }
+}
 .home .content-pick .btn {
+  width: 90%;
+  padding: 12px 0;
+  text-align: center;
   display: inline-block;
-  padding: 12px 52px;
   background: #17A2B8;
   color: #FFFFFF;
   border-radius: 10px;
@@ -277,4 +322,16 @@ img {
 .home .content-pick .btn:hover {
   background: #FFFFFF;
   color: #212529;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+  }
 }
