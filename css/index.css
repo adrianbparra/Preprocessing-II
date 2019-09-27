@@ -191,10 +191,18 @@ img {
 }
 .container-nav .navbar a {
   text-decoration: none;
-  color: black;
+  color: #212529;
 }
 .container-nav .navbar a:hover {
-  color: #999999;
+  color: #b7bec5;
+}
+@media (max-width: 500px) {
+  .container-nav .navbar {
+    flex-wrap: wrap;
+  }
+  .container-nav a:first-child {
+    width: 100%;
+  }
 }
 .footer {
   width: 100%;
@@ -257,4 +265,16 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  display: inline-block;
+  padding: 12px 52px;
+  background: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-size: 1.8rem;
+}
+.home .content-pick .btn:hover {
+  background: #FFFFFF;
+  color: #212529;
 }

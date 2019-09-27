@@ -1,6 +1,6 @@
 // Navigation Styles here
 .container-nav {
-    border-bottom: 2px dashed #C0C0C0;
+    border-bottom: 2px dashed @navigation-border;
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -20,10 +20,18 @@
         }
         a {
             text-decoration: none;
-            color: black;
+            color: @font-color;
             &:hover {
-                color: lighten(black,60%);
+                color: lighten(@font-color,60%);
             }
+        }
+    }
+    @media @mobile {
+        .navbar {
+            flex-wrap: wrap;
+        }
+        a:first-child {
+            width: 100%;
         }
     }
 }
