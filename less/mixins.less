@@ -4,10 +4,16 @@
     display: inline-block;
     background: @button-bg;
     color: @white;
+    border: 1px solid @button-bg;
     border-radius: 10px;
     font-size: 1.8rem;
     &:hover {
         background: @white;
         color: @font-color;
+        cursor: pointer;
     }
+}
+
+.animBounceIn(@time, @timeing) {
+    animation: bounceIn @time @timeing ;
 }
